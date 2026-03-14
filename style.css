@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.main_box {
+  height: 100vh;
+  background-image: url(spideyyy.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+}
+.btn_one i {
+  color: rgb(16, 86, 236);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 60px;
+  left: 10px;
+  position: absolute;
+}
+
+.sidebar_menu {
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(260, 65, 43, 0.35);
+  position: fixed;
+  box-shadow: 0 0 10px rgba(42, 60, 220, 0.5);
+  left: -250px;
+  transition: all 0.5s ease;
+}
+#check {
+  display: none;
+}
+.sidebar_menu .btn_two i {
+  color: rgb(16, 86, 236);
+  font-size: 28px;
+  left: 200px;
+  position: absolute;
+  line-height: 60px;
+}
+.sidebar_menu .logo {
+  position: absolute;
+  width: 100%;
+  line-height: 60px;
+}
+.sidebar_menu .logo a {
+  color: rgb(16, 86, 236);
+  font-size: 20px;
+  margin-left: 45px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+.sidebar_menu .menu {
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+.sidebar_menu li {
+  margin-top: 5px;
+  padding: 14px 20px;
+}
+.sidebar_menu .social_media {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  left: 25%;
+}
+.sidebar_menu .menu i {
+  padding-right: 8px;
+  text-decoration: none;
+  color: rgb(16, 86, 236);
+  font-size: 18px;
+}
+
+.sidebar_menu .menu li a {
+  text-decoration: none;
+  color: rgb(16, 86, 236);
+  font-size: 18px;
+}
+.sidebar_menu .social_media i {
+  padding: 3px;
+  opacity: 0.5;
+}
+
+.sidebar_menu .menu li:hover {
+  box-shadow: 0 0 10px rgba(20, 13, 234, 0.5);
+  font-size: 23px;
+}
+.btn_one i:hover {
+  font-size: 30px;
+  transition: all 0.5s ease;
+}
+.btn_two i:hover {
+  transition: all 0.5s ease;
+  font-size: 40px;
+}
+
+.sidebar_menu .social_media i:hover {
+  transform: scale(1.3);
+  opacity: 1.5;
+}
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+
+#check:checked ~ .main_box {
+  filter: blur(2px);
+}
+.sidebar_menu .logo:hover {
+  box-shadow: 0 0 10px rgba(20, 13, 234, 0.5);
+}
