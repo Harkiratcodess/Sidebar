@@ -23,7 +23,7 @@
 .sidebar_menu {
   width: 250px;
   height: 100vh;
-  background-color: rgba(260, 65, 43, 0.35);
+  background-color: rgba(255, 65, 43, 0.35);
   position: fixed;
   box-shadow: 0 0 10px rgba(42, 60, 220, 0.5);
   left: -250px;
